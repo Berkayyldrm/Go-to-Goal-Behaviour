@@ -158,15 +158,14 @@ def plot_vehicle(p1,p2,p3):
     plt.plot([p1[0], p2[0]], [p1[1], p2[1]], color='green', marker='.', linestyle='-')
     plt.plot([p2[0], p3[0]], [p2[1], p3[1]], color='green', marker='.', linestyle='-')
     plt.plot([p3[0], p1[0]], [p3[1], p1[1]], color='green', marker='.', linestyle='-')
-
-# Global definements
-x_start=0
-y_start=0
-x_goal = 10
-y_goal = 20
-theta_start=0
-dt=0.01
-x_rec, y_rec = [], []
-
-
-movement(x_start,y_start,x_goal,y_goal,theta_start,dt,x_rec,y_rec)
+    
+if __name__=='__main__':
+    x_start=0
+    y_start=0
+    x_goal = 10
+    y_goal = 20
+    theta_start=0
+    dt=0.01
+    x_rec, y_rec = [], []
+    
+    movement(x_start,y_start,x_goal,y_goal,theta_start,dt,x_rec,y_rec)
